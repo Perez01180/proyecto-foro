@@ -187,6 +187,15 @@ button {
     left: 95%;
   }
 }
+.contenido-qr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.contenido-qr img{
+  width: 200px;
+}
 /* nav bar para celular */
 @media (max-width: 768px) {
   .cohete{
