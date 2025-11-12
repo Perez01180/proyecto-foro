@@ -1,0 +1,236 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  background-color: black;
+  color: white;
+}
+a{
+color: white;
+text-decoration: none;
+}
+.menu-boton img{
+  width: 35px;
+  height: 35px;  
+  
+}
+
+.menu{
+  width: 200px;
+  min-height: 100vh;
+  background-color: #111733;
+  color: white;
+  z-index: 2;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  width: 150px;
+  height: 150px;
+}
+.opcion{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.opcion img{
+  width: 50px;
+  height: 50px;
+}
+.opcion p{
+  padding: 0 30px;
+}
+
+.contenido{
+  flex: 1;
+  padding: 20px;
+}
+
+.sup {
+  display: flex;
+
+  color: white;
+  padding: 10px;
+
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.buscador {
+  display: flex;
+  flex: 1;
+
+}
+.busqueda {
+  width: 50%;
+  border-radius: 10px;
+  font-size: 16px;
+
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #2b7cff;
+  color: white;
+  font-size: 16px;
+}
+
+.tema {
+
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.tema input{
+  background-color: white;
+  color: black;
+}
+
+.tema textarea{
+  border-radius: 10px;
+  font-size: 16px;
+
+
+}
+.post {
+  display: block;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #1a1a1a;
+}
+.post p {
+  margin: 0;
+  padding: 5px 0;
+  color: #fff;
+}
+.menu-boton{
+  display:none;
+}
+
+.mensaje-principal{
+  border: 2px solid #333;     
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;              
+  background-color: #1a1a1a;   
+  color: white;  
+}
+#comentarios p {
+  border: 2px solid #333;     
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;              
+  background-color: #1a1a1a;  
+  color: white;                
+}
+
+/* estilos registro */
+.contenido-registro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/estrellas.jpg");
+  background-size: cover;
+}
+#form-registro, #form-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 50px 20px;
+  border-radius: 15px;
+  z-index: 1;
+}
+#form-registro input, #form-login input{
+  margin: 15px 0;
+  font-size: 20px;
+  padding: 5px;
+}
+.cohete{
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(65deg);
+  animation:vuelo 5s linear infinite;
+}
+@keyframes vuelo{
+  0%{
+    opacity: 0;
+    top: 0;
+    left: 0;
+    scale: 1;
+  }
+  10%{
+    opacity: 1;
+  }
+  50%{
+    scale: 2;
+  }
+  100%{
+    scale: 0.5;
+    opacity: 0;
+    top: 92%;
+    left: 95%;
+  }
+}
+/* nav bar para celular */
+@media (max-width: 768px) {
+  .cohete{
+    transform: rotate(95deg);
+  }
+  .contenido{
+    padding-top: 60px;
+    min-height: 90vh;
+  }
+  .menu-boton {
+    display: block;
+    position: absolute;
+    top: 0;             
+    left: 0;            
+    background: #141979;
+    color: white;
+    border: none;
+    font-size: 26px;
+    padding: 10px 14px;
+    border-radius: 0 8px 8px 0; 
+    cursor: pointer;
+    transition: left 0.3s;
+    z-index: 1000;
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  .menu {
+    position: absolute;
+    width: 230px;
+    margin-left: -230px;
+    transition: margin-left 0.3s;
+    height: 100vh;
+  }
+
+  .menu.show {
+    margin-left: 0;
+  }
+
+  .menu.show + .menu-boton {
+    left: 230px;
+  }
+}
+
+

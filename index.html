@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0 ">
+  <title></title>
+  <link rel="stylesheet" href="./css/foro.css">
+</head>
+<body>
+  
+  <nav class= "menu">
+    <div class = "logo">
+      <img src="./img/forologo.svg" alt="" >
+    </div>
+    <a class="opcion" href="index.html">
+      <img src="./img/inicio.png" alt="">
+      <p>Inicio</p>
+    </a>
+    <div class="opcion">
+      <img src="./img/buscar.png" alt="">
+      <p>Buscar</p>
+    </div>
+    <div class="opcion">
+      <img src="./img/mensajes.png" alt="">
+      <p>Mensajes</p>
+    </div>
+    <a class="opcion" href="./pages/registro.html" >
+      <img src="./img/persona.png" alt="">
+      <p>Registrarse</p>
+    </a>
+    <a class = "opcion" href="./pages/login.html">
+      <img src="./img/login.png" alt="">
+      <p>Iniciar sesión</p>
+    </a>
+
+  </nav>
+  <div class="menu-boton" id = "menu-boton" >
+    ☰
+  </div>
+
+  <div class="contenido">
+    <div class="sup">
+      <div class="buscador">
+        <input class="busqueda" id = "inputBusqueda" placeholder="Buscar tema...">
+        <button id = "buttonBuscar">Buscar</button>
+      </div>
+    </div>
+
+
+    <div class="tema">
+      <form id = "form-post">
+        <p >Tema :</p>
+        <input type = "text" name = "tema-input" class="tema" placeholder="Escribe titulo del tema : ">
+
+        <p > Mensaje : </p>
+        <textarea class = "mensaje" name = "mensaje-input" rows = "4" placeholder="Escribe tu mensaje"></textarea>
+
+
+        <button type="submit">Postear</button>
+      </form>
+    </div>
+
+      <div class="" id = "posts">
+
+      </div>
+  </div>
+  <script src="./js/index.js" type = "module"></script>
+
+</body>
+</html>
