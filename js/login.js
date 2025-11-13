@@ -35,7 +35,7 @@ import {db, getDocs, collection } from "./firebaseConfig.js";
               localStorage.setItem("dataUsuario", JSON.stringify(dataUsuario));
               alert("Logeado correctamente");
               //mandamos al usuario a la pagina principal 
-              window.location.replace("/index.html");
+              window.location.replace("index.html");
             } else{
               alert("Contraseña incorrecta");
             }
