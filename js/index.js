@@ -41,7 +41,7 @@ inicializarPosteos();
 //insertamos post en el HTML
 function insertarPost(id, temaInput, mensajeInput, usuario) {
     postsContainer.innerHTML += `
-        <a href=${"/proyecto-foro/pages/post.html?id=" + id} class = "post">
+        <a href=${"./pages/post.html?id=" + id} class = "post">
           <p> autor : ${usuario}</p>
           <p> tema : ${temaInput}</p>
           <p> ${mensajeInput}</p>
