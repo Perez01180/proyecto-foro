@@ -35,7 +35,7 @@
           //esperamos hasta que se añada un usuario nuevo
           await addDoc(usuariosRef, dataUsuario);
           alert("registrado correctamente, por favor inicie sesión.");
-          window.location.replace("login.html");
+          window.location.replace("../login.html");
         }
 
         //añadimos un evento para detectar el envio del formulario
